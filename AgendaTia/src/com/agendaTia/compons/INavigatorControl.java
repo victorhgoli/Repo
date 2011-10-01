@@ -15,13 +15,4 @@ public abstract class INavigatorControl {
 			};
 			
 	}
-	
-	
-	
-	/////////////////////
-	//
-	//
-//	/
-
-	
 }

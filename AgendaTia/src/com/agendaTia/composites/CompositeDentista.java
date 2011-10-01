@@ -12,7 +12,6 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 
 import com.agendaTia.compons.Navigator;
-import com.agendaTia.forms.FormDentistaold;
 import com.agendaTia.grids.GridDentista;
 
 public class CompositeDentista extends Composite{
@@ -42,11 +41,11 @@ public class CompositeDentista extends Composite{
 		fd_composite.left = new FormAttachment(0, 10);
 		composite.setLayoutData(fd_composite);
 		
-		FormDentistaold formDentista = new FormDentistaold(composite, SWT.NONE);
+//		FormDentistaold formDentista = new FormDentistaold(composite, SWT.NONE);
 		
 		final GridDentista gridDentista = new GridDentista(composite, SWT.NONE);
-		composite.setParent(formDentista);
-		composite.setTabList(new Control[]{formDentista, gridDentista});
+//		composite.setParent(formDentista);
+//		composite.setTabList(new Control[]{formDentista, gridDentista});
 		
 		Control[] children = composite.getChildren();
 		Control control = stackLayout.topControl;
