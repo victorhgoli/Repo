@@ -39,11 +39,6 @@ public class Grid extends Composite {
 		table.setLinesVisible(true);
 		this.nameColumns = nameColumns;
 		
-		Button btnNewButton = new Button(this, SWT.NONE);
-		btnNewButton.setBounds(324, 258, 75, 25);
-		toolkit.adapt(btnNewButton, true, true);
-		btnNewButton.setText("New Button");
-		
 	}
 	
 	protected void buildChildreen() {

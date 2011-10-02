@@ -21,7 +21,7 @@ public class Navigator extends Composite {
 	 * @param style
 	 */
 	public Navigator(Composite parent, int style) {
-		super(parent, SWT.BORDER);
+		super(parent, SWT.NONE);
 		addDisposeListener(new DisposeListener() {
 			public void widgetDisposed(DisposeEvent e) {
 				toolkit.dispose();
@@ -32,16 +32,8 @@ public class Navigator extends Composite {
 		setLayout(new FillLayout(SWT.HORIZONTAL));
 		
 		Button btnChangeFace = new Button(this, SWT.NONE);
-		btnChangeFace.addSelectionListener(new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent e) {
-			}
-		});
-		
-		
-		
 		toolkit.adapt(btnChangeFace, true, true);
-		btnChangeFace.setText("changeFace");
+		btnChangeFace.setText("New Button");
 		
 		Button btnBackward = new Button(this, SWT.NONE);
 		toolkit.adapt(btnBackward, true, true);
